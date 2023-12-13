@@ -59,7 +59,7 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ログイン"/>
                                 <connections>
                                     <action selector="nexViewButtonTop:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Mnr-pg-pxW"/>
                                 </connections>
