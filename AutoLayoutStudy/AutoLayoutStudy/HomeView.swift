@@ -18,11 +18,11 @@ class HomeView: UIViewController {
     }
     
     @IBAction func nexViewButtonTop(_ sender: Any) {
-        var mail = mailTextField.text
-        var pas = passwordTextField.text
+        let mail = mailTextField.text
+        let pas = passwordTextField.text
         
         if (mail == "a" && pas == "a"){
-            var storyBoard = UIStoryboard(name: "NextView", bundle: Bundle.main)
+            let storyBoard = UIStoryboard(name: "NextView", bundle: Bundle.main)
             var nexVc =  storyBoard.instantiateViewController(withIdentifier: "NextViewID")as! NextView
             
             nexVc.getMail = mailTextField.text!
