@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Country Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CountryDetailViewControllerID" id="Y6W-OH-hqX" customClass="CountryDetailViewController" customModule="CountryTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ovn-Xv-40P">
+                                <rect key="frame" x="68" y="126" width="257" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名産品" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzh-sM-7b2">
+                                <rect key="frame" x="147" y="405" width="99" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LST-RZ-mbD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrC-Pi-H0s">
+                                <rect key="frame" x="146" y="320" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sjj-Yd-xjg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ovn-Xv-40P" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="68" id="CAa-T0-3U7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Tzh-sM-7b2" secondAttribute="trailing" constant="147" id="DYp-cd-10E"/>
+                            <constraint firstItem="ovn-Xv-40P" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="67" id="Gb9-Qi-XD3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ovn-Xv-40P" secondAttribute="trailing" constant="68" id="K6c-b1-Jt2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Tzh-sM-7b2" secondAttribute="bottom" constant="383" id="LMW-3S-P8H"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GrC-Pi-H0s" secondAttribute="trailing" constant="146" id="Mhd-f1-TSj"/>
+                            <constraint firstItem="Tzh-sM-7b2" firstAttribute="top" secondItem="GrC-Pi-H0s" secondAttribute="bottom" constant="55" id="aNb-hM-AO5"/>
+                            <constraint firstItem="Tzh-sM-7b2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="147" id="dxs-RN-mrx"/>
+                            <constraint firstItem="GrC-Pi-H0s" firstAttribute="top" secondItem="ovn-Xv-40P" secondAttribute="bottom" constant="66" id="hP0-1z-m0D"/>
+                            <constraint firstItem="GrC-Pi-H0s" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="146" id="sdv-jr-43k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CountryImg" destination="ovn-Xv-40P" id="4YG-eG-QfD"/>
+                        <outlet property="CountryName" destination="GrC-Pi-H0s" id="IZl-Ep-Kyv"/>
+                        <outlet property="setNationalFood" destination="Tzh-sM-7b2" id="7At-hU-z40"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6.8702290076335872" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
